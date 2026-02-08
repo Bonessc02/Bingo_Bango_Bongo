@@ -31,7 +31,7 @@ def sell_tickets():
 	Controls the ticket selling procedure.
 	Tracks remaining tickets available, validates the input and counts buyers.
 	"""
-	TOTAL_TICKETS = 20
+	TOTAL_TICKETS = 10
 	remaining_tickets = TOTAL_TICKETS
 	total_buyers = 0 # accumulator for purchases for one buyer
 	
