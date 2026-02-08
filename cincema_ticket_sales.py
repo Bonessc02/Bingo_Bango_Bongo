@@ -23,7 +23,7 @@ def get_ticket_request(remaining_tickets):
 	int: The number of tickets reqeusted by the customer.
 	"""
 	print(f"\nTickets remaining: {remaining_tickets}")
-	tickets = int(input("How many tickets would you like to purchase?(1-4)"))
+	tickets = int(input("How many tickets are you planning on buying?(1-4)"))
 	return tickets
 	
 def sell_tickets():
