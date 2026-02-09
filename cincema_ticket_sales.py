@@ -33,7 +33,7 @@ def sell_tickets():
 	"""
 	TOTAL_TICKETS = 10
 	remaining_tickets = TOTAL_TICKETS
-	total_buyers = 0 # accumulator for purchases for one buyer
+	buyer_count = 0 # accumulator for purchases for one buyer
 	
 	while remaining_tickets > 0:
 	    tickets_requested = get_ticket_request(remaining_tickets)
@@ -46,13 +46,13 @@ def sell_tickets():
 	    		
 	    else:
 	    	remaining_tickets -= tickets_requested
-	    	total_buyers += 1
+	    	buyer_count += 1
 	    	print(f"You Purchased {tickets_requested} tickets(s).")
 	    	print(f"Tickets Remaining: {remaining_tickets}")
 	    	
 	    	
 	print("\nAll tickets have been sold!")
-	print(f"The total number of people whom purchased tickets is: {total_buyers}")
+	print(f"The total number of people whom purchased tickets is: {buyer_count}")
 	    	
 	    	
 	    	
